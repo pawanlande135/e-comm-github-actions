@@ -1,0 +1,6 @@
+# Gaol is to say Hellow & Tell the tittle !
+
+# start naming the workflow
+name: "Hello Workflow"
+
+jobs
