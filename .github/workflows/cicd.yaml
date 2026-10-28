@@ -1,0 +1,26 @@
+#Goal: Just a dummy CICD Pipeline.
+name: CICD-Demo
+on:
+  push:
+
+jobs:
+  code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Clone The code"
+        run: echo "code is getting cloned"
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Build The code with docker"
+        run: echo "code is getting build"    
+  Test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Code is getting tested"
+        run: echo "code is getting tested"
+  Deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Deploy The code"
+        run: echo "code is getting Deployed"
