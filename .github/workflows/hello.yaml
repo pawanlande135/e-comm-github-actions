@@ -11,5 +11,11 @@ jobs:
     steps: 
       - name: "Say Hello"
         run: echo "Hello"
+  repo-name:
+    runs-on: ubuntu-latest
+    steps:
+       - name: Display Repository Name
+         run: echo "The repository name is ${{ github.event.repository.name }}"
+      
         
         
