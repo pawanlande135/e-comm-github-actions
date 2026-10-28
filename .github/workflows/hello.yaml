@@ -2,5 +2,16 @@
 
 # start naming the workflow
 name: "Hello Workflow"
+# on tells when the workflow runs.
+on: 
+   push: 
 
-jobs
+
+jobs: 
+  greet: 
+    runs-on: ubuntu-latest
+    steps: 
+      - name: "Say Hello"
+        run: echo "Hello"
+        
+        
