@@ -4,9 +4,7 @@
 name: "Hello Workflow"
 # on tells when the workflow runs.
 on: 
-   push: 
-
-
+  push: 
 jobs: 
   greet: 
     runs-on: ubuntu-latest
