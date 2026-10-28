@@ -12,6 +12,7 @@ jobs:
       - name: "Say Hello"
         run: echo "Hello"
   repo-name:
+    needs: greet
     runs-on: ubuntu-latest
     steps:
        - name: Display Repository Name
