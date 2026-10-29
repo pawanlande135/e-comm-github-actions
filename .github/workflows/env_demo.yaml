@@ -11,4 +11,4 @@ jobs:
      runs-on: ubuntu-latest
      steps:
         - name: Show env in plan text
-          run: echo "My name is ${{ env.Name }}"
+          run: echo "My name is ${{ env.NAME }}"
