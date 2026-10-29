@@ -2,6 +2,17 @@ name: Show ENV Variables
 
 on: 
    workflow_dispatch:
+    inputs:
+      environment:
+        description: Select the environment you want
+        required: true
+        default: "dev"
+        type: choice
+        options:
+          - dev
+          - stage
+          - prod
+      
 
 env:
    NAME: Pawan
