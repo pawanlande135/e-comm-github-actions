@@ -1,0 +1,14 @@
+name: Show ENV Variables
+
+on: 
+   workflow_dispatch:
+
+env:
+   NAME: Pawan
+
+jobs:
+   show_env:
+     runs-on: ubuntu-latest
+     steps:
+        - name: Show env in plan text
+          run: echo "My name is ${{ env.Name }}"
