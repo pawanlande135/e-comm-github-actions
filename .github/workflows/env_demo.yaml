@@ -14,3 +14,5 @@ jobs:
           run: echo "My name is ${{ env.NAME }}"
         - name: Invoke Secrets
           run: echo "Invoked secret is ${{ secrets.JOHN_SECRET }}"
+        - name: show the declared variable
+          run: echo "Declared variable is ${{ vars.DOCKERHUB_USERNAME }}"
