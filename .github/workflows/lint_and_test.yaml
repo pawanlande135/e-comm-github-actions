@@ -6,7 +6,7 @@ on:
   workflow_dispatch: 
 
 jobs:
-  code_linter:
+  linting_and_test:
     runs-on: ubuntu-latest
     steps:
       - name: Code Checkout
@@ -20,6 +20,8 @@ jobs:
 
       - name: Install Dependencies
         run: pip install -r requirements.txt
+      - name: Code Test
+        run: pytest
 
       - name: Code Linting
         run: ruff check . --fix
