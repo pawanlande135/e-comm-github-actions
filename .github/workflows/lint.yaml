@@ -1,0 +1,17 @@
+#Goal: To check if the python code is syntactically correct.
+
+name: Code Lint
+
+on: 
+  workflow_dispatch: 
+
+jobs:
+  code_linter:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Code Checkout
+        uses: actions/checkout@7
+
+      - name: Code Linting
+        
+        
