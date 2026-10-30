@@ -1,8 +1,7 @@
 #Goal: Just a dummy CICD Pipeline.
 name: CICD-Demo
-on:
-  push:
-
+on: 
+   workflow_dispatch:
 jobs:
   code:
     runs-on: ubuntu-latest
