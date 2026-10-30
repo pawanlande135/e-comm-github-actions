@@ -19,7 +19,7 @@ jobs:
           python-version: '3.13'
 
       - name: Install Dependencies
-        run: pip innstall -r requirements.txt
+        run: pip install -r requirements.txt
 
       - name: Code Linting
         run: ruff check .
