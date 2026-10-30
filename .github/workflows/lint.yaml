@@ -11,7 +11,17 @@ jobs:
     steps:
       - name: Code Checkout
         uses: actions/checkout@7
+        
+
+      - name: Setup Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+
+      - name: Install Dependencies
+        run: pip innstall -r requirements.txt
 
       - name: Code Linting
+        run: ruff check .
         
         
